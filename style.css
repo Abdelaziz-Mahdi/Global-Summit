@@ -21,3 +21,17 @@ body {
   font-family: "Lato", sans-serif;
   font-family: "Lexend Deca", sans-serif;
 }
+
+#intro-rap {
+  background-image: url(./visuals/mobile_intro_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#intro-container {
+  padding-top: 51px;
+}
+
+#intro-article {
+  width: 90%;
+}
