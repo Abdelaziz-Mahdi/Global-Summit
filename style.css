@@ -1,17 +1,26 @@
 :root {
+  --font-gray: #333;
   --font-color: #333;
   --font-white: white;
   --color-black: #272a31;
   --color-orange: #ec5242;
-  --color-gray: #d3d3d3;
+  --color-gray: #f8f4f4;
 }
 
 .white-font {
   color: var(--font-white);
 }
 
+.gray-gray {
+  color: var(--font-gray);
+}
+
 .orange-font {
   color: var(--color-orange);
+}
+
+.gray-bg {
+  background-color: var(--color-gray);
 }
 
 .orange-bg {
@@ -34,6 +43,10 @@ body {
   /* font-family: "Lexend Deca", sans-serif; */
 }
 
+.lexend {
+  font-family: "Lexend Deca", sans-serif;
+}
+
 #intro-rap {
   background-image: url(./visuals/mobile_intro_bg.png);
   background-repeat: no-repeat;
@@ -41,7 +54,7 @@ body {
 }
 
 #intro-container {
-  padding-top: 51px;
+  padding: 51px 0 51px;
 }
 
 #intro-article {
