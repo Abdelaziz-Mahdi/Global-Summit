@@ -47,6 +47,8 @@ body {
   font-family: "Lexend Deca", sans-serif;
 }
 
+/*-----Intro-----*/
+
 #intro-rap {
   background-image: url(./visuals/mobile_intro_bg.png);
   background-repeat: no-repeat;
@@ -74,6 +76,8 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-size: 36px;
+  font-weight: 900;
 }
 
 #program-section {
