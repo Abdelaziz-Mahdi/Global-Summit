@@ -2,24 +2,36 @@
   --font-color: #333;
   --font-white: white;
   --color-black: #272a31;
-  --color-black: #ec5242;
-  --color-black: #d3d3d3;
+  --color-orange: #ec5242;
+  --color-gray: #d3d3d3;
 }
 
 .white-font {
   color: var(--font-white);
 }
 
-* {
+.orange-font {
+  color: var(--color-orange);
+}
+
+.orange-bg {
+  background-color: var(--color-orange);
+}
+
+* ,#program-section p {
   list-style: none;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+ul {
+  padding: 0;
+}
+
 body {
   font-family: "Lato", sans-serif;
-  font-family: "Lexend Deca", sans-serif;
+  /* font-family: "Lexend Deca", sans-serif; */
 }
 
 #intro-rap {
@@ -34,4 +46,42 @@ body {
 
 #intro-article {
   width: 90%;
+}
+
+#intro-rap {
+  background-image: url(./visuals/mobile_intro_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  background-image: url(./visuals/text-clip.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#program-section {
+  background-image: url(./visuals/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: var(--font-color);
+
+}
+
+.line {
+  border-bottom: 1px solid var(--color-orange);
+  margin: 0px auto 50px;
+  width: 40px;
+  height: 16px;
+}
+
+#program-section p {
+  color: var(--font-white);
+}
+
+#program-section li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 16px;
 }
