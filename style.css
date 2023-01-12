@@ -27,7 +27,22 @@
   background-color: var(--color-orange);
 }
 
-* ,#program-section p {
+.fontS-8 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 14px;
+}
+
+.fontS-10 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+*,
+#program-section p {
   list-style: none;
   box-sizing: border-box;
   padding: 0;
@@ -84,7 +99,6 @@ h1 {
   background-image: url(./visuals/pattern_bg.png);
   background-repeat: repeat;
   background-color: var(--font-color);
-
 }
 
 .line {
@@ -94,6 +108,17 @@ h1 {
   height: 16px;
 }
 
+.main-title::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: var(--color-orange);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 #program-section p {
   color: var(--font-white);
 }
@@ -101,4 +126,17 @@ h1 {
 #program-section li {
   background-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 16px;
+}
+
+/*----------featured-speakers-----------*/
+
+.secondary-title::after {
+  content: "";
+  width: 25px;
+  height: 0.5px;
+  background-color: var(--color-orange);
+  position: absolute;
+  bottom: -10px;
+  left: 0%;
+  transform: translateX(0%);
 }
