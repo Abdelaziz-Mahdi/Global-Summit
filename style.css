@@ -41,6 +41,13 @@
   line-height: 15px;
 }
 
+.fontS-12 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+
 *,
 #program-section p {
   list-style: none;
