@@ -11,7 +11,7 @@
   color: var(--font-white);
 }
 
-.gray-gray {
+.gray-font {
   color: var(--font-gray);
 }
 
@@ -25,6 +25,11 @@
 
 .orange-bg {
   background-color: var(--color-orange);
+}
+
+.gray-filter {
+  filter: invert(19%) sepia(5%) saturate(2%) hue-rotate(2deg) brightness(93%)
+    contrast(94%);
 }
 
 .fontS-8 {
@@ -75,14 +80,6 @@ body {
   background-image: url(./visuals/mobile_intro_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#intro-container {
-  padding: 51px 0 51px;
-}
-
-#intro-article {
-  width: 90%;
 }
 
 #intro-rap {
