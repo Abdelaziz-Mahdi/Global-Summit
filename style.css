@@ -1,6 +1,6 @@
 :root {
   --font-gray: #333;
-  --font-color: #333;
+  --font-dk: #333;
   --font-white: white;
   --color-black: #272a31;
   --color-orange: #ec5242;
@@ -21,6 +21,10 @@
 
 .gray-bg {
   background-color: var(--color-gray);
+}
+
+.gray-dk {
+  background-color: var(--font-dk);
 }
 
 .orange-bg {
@@ -102,14 +106,7 @@ h1 {
 #program-section {
   background-image: url(./visuals/pattern_bg.png);
   background-repeat: repeat;
-  background-color: var(--font-color);
-}
-
-.line {
-  border-bottom: 1px solid var(--color-orange);
-  margin: 0px auto 50px;
-  width: 40px;
-  height: 16px;
+  background-color: var(--font-dk);
 }
 
 .main-title::after {
@@ -143,4 +140,16 @@ h1 {
   bottom: -10px;
   left: 0%;
   transform: translateX(0%);
+}
+
+/*-------------Footer-----------*/
+
+.gdg {
+  max-width: 170px;
+}
+
+@media only screen and (min-width: 768px) {
+  .gdg {
+    max-width: 250px;
+  }
 }
