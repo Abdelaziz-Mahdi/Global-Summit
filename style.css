@@ -36,6 +36,12 @@
     contrast(94%);
 }
 
+.orange-border {
+  border: 2px;
+  border-color: var(--color-orange);
+  border-style: solid;
+}
+
 .fontS-8 {
   font-style: normal;
   font-weight: 700;
@@ -57,6 +63,13 @@
   line-height: 17px;
 }
 
+.hOne-font {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 48px;
+}
+
 *,
 #program-section p {
   list-style: none;
@@ -76,6 +89,29 @@ body {
 
 .lexend {
   font-family: "Lexend Deca", sans-serif;
+}
+
+/*---------------- Nav Bar ---------------*/
+
+.fa-facebook-f,
+.fa-twitter {
+  color: white;
+}
+
+.devfest-icon {
+  width: 50px;
+  mix-blend-mode: luminosity;
+}
+
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link .active {
+  color: var(--color-orange);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--color-orange);
 }
 
 /*-----Intro-----*/
@@ -149,7 +185,21 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
+  nav {
+    background-color: white;
+  }
+
+  .hOne-font {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
   .gdg {
     max-width: 250px;
+  }
+  .p50 {
+    max-width: 70%;
   }
 }
