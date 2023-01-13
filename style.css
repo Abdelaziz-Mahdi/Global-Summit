@@ -63,6 +63,20 @@
   line-height: 17px;
 }
 
+.fontS-127 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.fontS-prog-14 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.2712px;
+  line-height: 25px;
+}
+
 .hOne-font {
   font-style: normal;
   font-weight: 900;
@@ -194,6 +208,13 @@ h1 {
     font-weight: 900;
     font-size: 48px;
     line-height: 64px;
+  }
+
+  .fontS-prog-14 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .gdg {
