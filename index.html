@@ -17,8 +17,73 @@
   <body>
     <section id="intro-rap">
       <header class="header">
-        <nav id="mobile-menu" class="navbar">
-          <!-- Navbar content -->
+        <div class="top-bar d-none d-md-block gray-dk">
+          <ul class="nav justify-content-end container align-items-center">
+            <li class="nav-item">
+              <i class="fa-brands m-2 fa-facebook-f"></i>
+            </li>
+            <li class="nav-item">
+              <i class="fa-brands m-2 fa-twitter"></i>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fontS-12" href="#">English</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fontS-12" href="#">My Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fontS-12" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Desktop Navbar Start -->
+        <nav class="navbar navbar-expand-md">
+          <div class="container-md">
+            <a class="navbar-brand d-none d-md-block" href="#"
+              ><img
+                class="devfest-icon"
+                src="./visuals/DF22-Bevy-EventThumb@2x_togjfee.png"
+                alt="devfest-icon"
+            /></a>
+            <button
+              class="navbar-toggler border border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 me-2 mb-lg-0">
+                <li class="nav-item p-2">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link" href="#">Program</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link" href="#">Join</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link" href="#">Sponsers</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+              </ul>
+              <button class="btn orange-font orange-border" type="submit">
+                Campain
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile Navbar Start -->
+        <nav id="mobile-menu" class="navbar d-none">
           <svg
             class="ms-4 mt-2 gray-filter"
             xmlns="http://www.w3.org/2000/svg"
@@ -31,16 +96,17 @@
             ></path>
           </svg>
         </nav>
+        <!-- Mobile Navbar End -->
       </header>
       <!-- Intro content -->
       <div id="intro-container" class="pt-3 pb-5">
         <article id="intro-article" class="container-md d-lg-block p-3">
           <h3 class="p-1 orange-font">"Hello! Sharing World"</h3>
-          <h1 class="p-1 lexend text-uppercase">
-            Creative Common Global-Summit 2015
+          <h1 class="p-1 hOne-font lexend text-uppercase">
+            Creative Commons <br> Global Summit <br> 2015
           </h1>
           <p
-            class="mt-3 p-3 me-md-5 gray-font gray-bg border border-3 border-white fontS-12"
+            class="p50 mt-3 p-3 me-md-5 gray-font gray-bg border border-3 border-white fontS-12"
           >
             A joyful celebration believing in the value of openness and sharing,
             creating a positive change with people from over 80 countries is
@@ -59,20 +125,20 @@
           <h2 class="text-light">Main Program</h2>
         </header>
         <section>
-          <ul class="pb-5 pt-5">
-            <li class="d-inline-flex align-items-center">
+          <ul class="row pb-5 pt-5">
+            <li class="col-md-2 row">
               <img
                 src="./visuals/program_icon_01.png"
                 alt="podium"
-                class="h-25 p-2 flex-fill"
+                class="p-2 col-md-12 col-3"
               />
-              <h6 class="h-25 p-2 flex-fill orange-font">Hello</h6>
-              <p class="p-2 flex-fill h-25 text-start">
+              <h6 class="p-2 col-md-12 col-3 orange-font">Hello</h6>
+              <p class="p-2 col-md-12 col-6 text-start">
                 Listen to the speakers from various countries about the messages
                 of sharing and opening.
               </p>
             </li>
-            <li class="d-inline-flex align-items-center">
+            <li class="col-md-2 d-inline-flex align-items-center">
               <img
                 src="./visuals/program_icon_02.png"
                 alt="podium"
@@ -84,7 +150,7 @@
                 organized from Art Center Nabi
               </p>
             </li>
-            <li class="d-inline-flex align-items-center">
+            <li class="col-md-2 d-inline-flex align-items-center">
               <img
                 src="./visuals/program_icon_03.png"
                 alt="podium"
@@ -96,7 +162,7 @@
                 for each topic.
               </p>
             </li>
-            <li class="d-inline-flex align-items-center">
+            <li class="col-md-2 d-inline-flex align-items-center">
               <img
                 src="./visuals/program_icon_04.png"
                 alt="podium"
@@ -108,7 +174,7 @@
                 just watching at it.
               </p>
             </li>
-            <li class="d-inline-flex align-items-center">
+            <li class="col-md-2 d-inline-flex align-items-center">
               <img
                 src="./visuals/program_icon_05.png"
                 alt="podium"
@@ -280,22 +346,37 @@
         </header>
         <section>
           <ul class="row d-flex justify-content-center pt-5">
-            <li class="col-md-auto col-4"><img src="./visuals/google-ic.svg" alt="google-ic"></li>
-            <li class="col-md-auto col-4"><img src="./visuals/google-ic.svg" alt="google-ic"></li>
-            <li class="col-md-auto col-4"><img src="./visuals/google-ic.svg" alt="google-ic"></li>
-            <li class="col-md-auto col-6"><img src="./visuals/google-ic.svg" alt="google-ic"></li>
-            <li class="col-md-auto col-6"><img src="./visuals/google-ic.svg" alt="google-ic"></li>
+            <li class="col-md-auto col-4">
+              <img src="./visuals/google-ic.svg" alt="google-ic" />
+            </li>
+            <li class="col-md-auto col-4">
+              <img src="./visuals/google-ic.svg" alt="google-ic" />
+            </li>
+            <li class="col-md-auto col-4">
+              <img src="./visuals/google-ic.svg" alt="google-ic" />
+            </li>
+            <li class="col-md-auto col-6">
+              <img src="./visuals/google-ic.svg" alt="google-ic" />
+            </li>
+            <li class="col-md-auto col-6">
+              <img src="./visuals/google-ic.svg" alt="google-ic" />
+            </li>
           </ul>
         </section>
       </div>
     </section>
     <footer class="row d-md-flex ms-md-5 pt-4 pb-4 ps-lg-5 ps-md-2">
       <div class="ms-md-3 col-md-auto col-6 text-center">
-        <img class="pt-4 gdg" src="./visuals/logo_dark_gdg.svg"  alt="">
+        <img class="pt-4 gdg" src="./visuals/logo_dark_gdg.svg" alt="" />
       </div>
       <div class="col-md-auto col-6 pt-lg-2 pt-md-2 ps-md-3 ps-lg-4 pe-3">
-        <h6 class="fontS-12 pt-3 pt-md-0">Last updated 3 mins ago Last updated 3 mins ago</h5>
-        <h6 class="fontS-12 d-none d-md-block">Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago</h6>
+        <h6 class="fontS-12 pt-3 pt-md-0">
+          Last updated 3 mins ago Last updated 3 mins ago
+        </h6>
+        <h6 class="fontS-12 d-none d-md-block">
+          Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins
+          ago
+        </h6>
       </div>
     </footer>
     <script src="js/all.min.js"></script>
