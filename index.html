@@ -51,6 +51,7 @@
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar"
               aria-controls="offcanvasNavbar"
+              aria-label="toggler"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -85,49 +86,39 @@
                       class="nav-link active"
                       data-bs-dismiss="offcanvas"
                       aria-label="Close"
-                      id="about-btn"
                       aria-current="page"
+                      id="about-btn"
                       href="#"
                       >About</a
                     >
                   </li>
                   <li class="nav-item p-2">
-                    <a class="nav-link" href="#">Program</a>
+                    <a class="nav-link" href="#program-section">Program</a>
                   </li>
                   <li class="nav-item p-2">
-                    <a class="nav-link" href="#">Join</a>
+                    <a class="nav-link" href="#speakers">Speakers</a>
                   </li>
                   <li class="nav-item p-2">
-                    <a class="nav-link" href="#">Sponsers</a>
+                    <a class="nav-link" href="#partners">Sponsers</a>
                   </li>
                   <li class="nav-item p-2">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="https://gdg.community.dev/"
+                      >GDG</a
+                    >
                   </li>
                   <li class="nav-item p-2">
-                    <button class="btn orange-font orange-border" type="submit">
+                    <a
+                      class="btn orange-font orange-border"
+                      href="https://gdg.community.dev/events/details/google-gdg-cairo-presents-devfest-cairo-2022/"
+                    >
                       Campain
-                    </button>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </nav>
-        <!-- Mobile Navbar Start -->
-        <nav id="mobile-menu" class="navbar d-none">
-          <svg
-            class="ms-4 mt-2 gray-filter"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 16 16"
-            width="42"
-            height="42"
-          >
-            <path
-              d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"
-            ></path>
-          </svg>
-        </nav>
-        <!-- Mobile Navbar End -->
       </header>
       <!-- Intro content -->
       <div id="intro-container" class="pt-3 pb-5">
@@ -278,139 +269,11 @@
           <h2>Featured Speakers</h2>
         </div>
         <!----- Speakers Body ------->
-        <div class="row pt-5 pb-5 ps-md-3 pe-md-3 ps-lg-3 pe-lg-3">
-          <div class="col-md-6 mb-3 mt-3">
-            <div class="row row-cols-2">
-              <img
-                class="col-4 mb-3 mt-3"
-                src="./visuals/speaker-amanda-lewis.png"
-                alt="speaker-one"
-              />
-              <div class="col-8 text-start text-holder">
-                <h3 class="mt-3">Amanda Lewis</h3>
-                <p
-                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
-                >
-                  Developer Advocate at Google
-                </p>
-                <p class="fontS-9-14">
-                  “A developer should attend DevFest this year to connect with
-                  others and for opportunities to expand their view of software
-                  delivery.”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3 mt-3">
-            <div class="row row-cols-2">
-              <img
-                class="col-4 mb-3 mt-3"
-                src="./visuals/speaker-angie-sasmita.png"
-                alt="speaker-one"
-              />
-              <div class="col-8 text-start text-holder">
-                <h3 class="mt-3">Angie Sasmita</h3>
-                <p
-                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
-                >
-                  Android DevRel Engineer Google Singapore
-                </p>
-                <p class="fontS-9-14">
-                  “It will feel like a family reunion meeting again with the
-                  developer community after years of staring into the screen.”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3 mt-3">
-            <div class="row row-cols-2">
-              <img
-                class="col-4 mb-3 mt-3"
-                src="./visuals/speaker-carlos-reyes.png"
-                alt="speaker-one"
-              />
-              <div class="col-8 text-start text-holder">
-                <h3 class="mt-3">Carlos J. Rojas Reyes</h3>
-                <p
-                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
-                >
-                  Principal Customer Engineer, Google Latin America
-                </p>
-                <p class="fontS-9-14">
-                  “DevFest is an amazing opportunity for you to connect with
-                  other passionate developers and learn from them!”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3 mt-3">
-            <div class="row row-cols-2">
-              <img
-                class="col-4 mb-3 mt-3"
-                src="./visuals/speaker-ezan-thomas.png"
-                alt="speaker-one"
-              />
-              <div class="col-8 text-start text-holder">
-                <h3 class="mt-3">Thomas Ezan</h3>
-                <p
-                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
-                >
-                  Developer Advocate at Google
-                </p>
-                <p class="fontS-9-14">
-                  “DevFest is the best way to connect with the developer
-                  community and learn the latest about APIs and Frameworks!”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3 mt-3">
-            <div class="row row-cols-2">
-              <img
-                class="col-4 mb-3 mt-3"
-                src="./visuals/speaker-achouak-bachiri.png"
-                alt="speaker-one"
-              />
-              <div class="col-8 text-start text-holder">
-                <h3 class="mt-3">Achouak Bachiri</h3>
-                <p
-                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
-                >
-                  Master's student in computer science
-                </p>
-                <p class="fontS-9-14">
-                  Experience in organizations and volunteer work, president of
-                  the club GDSC M'sila in algeria , and conducted several
-                  workshops for the benefit of students
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3 mt-3">
-            <div class="row row-cols-2">
-              <img
-                class="col-4 mb-3 mt-3"
-                src="./visuals/speaker-adeline-villette.png"
-                alt="speaker-one"
-              />
-              <div class="col-8 text-start text-holder">
-                <h3 class="mt-3">Adeline Villette</h3>
-                <p
-                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
-                >
-                  Cloud Security Officer
-                </p>
-                <p class="fontS-9-14">
-                  With 17 years of experience on infrastructure topics and
-                  evolving for 5 years now in a 100% Public Cloud context.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ul id="speakers-card" class="row pt-5 pb-5 ps-md-3 pe-md-3 ps-lg-3 pe-lg-3">
+        </ul>
       </div>
     </section>
-    <section id="about" class="">
+    <section id="about">
       <div class="about-main d-flex justify-content-center">
         <section class="text-center">
           <div class="main-title position-relative m-5">
@@ -556,7 +419,7 @@
       <div class="col-md-auto col-6 pt-lg-2 pt-md-2 ps-md-3 ps-lg-4 pe-3">
         <h6 class="fontS-12 pt-3 pt-md-0">
           Google Developers under terms that explicitly encourage people to
-          take, modify, reuse, re-purpose, and remix our work as they see fit
+          take, modify, reuse, re-purpose, and remix our work as they see fit.
         </h6>
         <h6 class="fontS-12 d-none d-md-block">
           Proper attribution is required when you reuse or create modified
