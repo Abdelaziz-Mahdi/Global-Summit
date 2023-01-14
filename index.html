@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="body">
     <section id="intro-rap">
-      <header class="header">
+      <header id="header">
         <div class="top-bar d-none d-md-block gray-dk">
           <ul class="nav justify-content-end container align-items-center">
             <li class="nav-item">
@@ -39,7 +39,7 @@
         <!-- Desktop Navbar Start -->
         <nav class="navbar navbar-expand-md">
           <div class="container-md">
-            <a class="navbar-brand d-none d-md-block" href="#"
+            <a id="home" class="navbar-brand d-none d-md-block" href="#"
               ><img
                 class="devfest-icon"
                 src="./visuals/DF22-Bevy-EventThumb@2x_togjfee.png"
@@ -59,7 +59,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 me-2 mb-lg-0">
                 <li class="nav-item p-2">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active"
+                    id="about-btn"
+                    aria-current="page"
+                    href="#"
                     >About</a
                   >
                 </li>
@@ -235,7 +239,7 @@
         </footer>
       </div>
     </section>
-    <section class="featured-speakers text-center pt-5 pb-5">
+    <section id="speakers" class="featured-speakers text-center pt-5 pb-5">
       <div class="container">
         <!----- Speakers Header ------->
         <div class="main-title position-relative">
@@ -378,7 +382,123 @@
         </div>
       </div>
     </section>
-    <section class="Partners text-center pt-5 pb-5 gray-dk">
+    <section id="about" class="">
+      <div class="container">
+        <div class="container text-center">
+          <header class="main-title position-relative">
+            <h2 class="text-light">Main Program</h2>
+          </header>
+          <section class="">
+            <ul
+              class="row ps-2 pe-2 ps-md-0 pe-md-0 pb-4 pt-4 d-flex justify-content-center"
+            >
+              <li
+                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
+              >
+                <img
+                  src="./visuals/program_icon_01.png"
+                  alt="podium"
+                  class="pt-md-2 col-md-auto col-2 program-icon"
+                />
+                <h6
+                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
+                >
+                  Hello
+                </h6>
+                <p
+                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
+                >
+                  Listen to the speakers from various countries about the
+                  messages.
+                </p>
+              </li>
+              <li
+                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
+              >
+                <img
+                  src="./visuals/program_icon_02.png"
+                  alt="podium"
+                  class="pt-md-2 col-md-auto col-2 program-icon"
+                />
+                <h6
+                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
+                >
+                  Exhibition
+                </h6>
+                <p
+                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
+                >
+                  pplying CC license of artists, organized from Art Center Nabi
+                </p>
+              </li>
+              <li
+                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
+              >
+                <img
+                  src="./visuals/program_icon_03.png"
+                  alt="podium"
+                  class="pt-md-2 col-md-auto col-2 program-icon"
+                />
+                <h6
+                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
+                >
+                  Forum
+                </h6>
+                <p
+                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
+                >
+                  share your thoughts and opinions with experts for each topic.
+                </p>
+              </li>
+              <li
+                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
+              >
+                <img
+                  src="./visuals/program_icon_04.png"
+                  alt="podium"
+                  class="pt-md-2 col-md-auto col-2 program-icon"
+                />
+                <h6
+                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
+                >
+                  Workshop
+                </h6>
+                <p
+                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
+                >
+                  Try creating your own work using open source license.
+                </p>
+              </li>
+              <li
+                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
+              >
+                <img
+                  src="./visuals/program_icon_05.png"
+                  alt="podium"
+                  class="pt-md-2 col-md-auto col-2 program-icon"
+                />
+                <h6
+                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
+                >
+                  G Ignite
+                </h6>
+                <p
+                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
+                >
+                  get opportunities to network with Coders around the world.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <footer>
+            <a class="btn-lg text-light" href="#" role="button"
+              >Join Global Summit</a
+            >
+          </footer>
+        </div>
+      </div>
+    </section>
+    <section id="partners" class="Partners text-center pt-5 pb-5 gray-dk">
       <div class="container">
         <!----- Partners ------->
         <header class="main-title position-relative">
@@ -405,9 +525,9 @@
         </section>
       </div>
     </section>
-    <footer class="row d-md-flex ms-md-5 pt-4 pb-4 ps-lg-5 ps-md-2">
+    <footer id="footer" class="row d-md-flex pt-4 pb-4 ps-lg-5 ps-md-2">
       <div class="ms-md-3 col-md-auto col-6 text-center">
-        <img class="ps-2 pt-4 gdg" src="./visuals/logo_dark_gdg.svg" alt="" />
+        <img id="logo" class="ps-2 pt-4 gdg" src="./visuals/logo_dark_gdg.svg" alt="" />
       </div>
       <div class="col-md-auto col-6 pt-lg-2 pt-md-2 ps-md-3 ps-lg-4 pe-3">
         <h6 class="fontS-12 pt-3 pt-md-0">
@@ -419,6 +539,7 @@
         </h6>
       </div>
     </footer>
+    <script src="js/script.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
