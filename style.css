@@ -36,6 +36,10 @@
   background-color: var(--color-orange);
 }
 
+.white-bg {
+  background-color: var(--font-white);
+}
+
 .gray-filter {
   filter: invert(19%) sepia(5%) saturate(2%) hue-rotate(2deg) brightness(93%)
     contrast(94%);
@@ -58,11 +62,20 @@
   line-height: 14px;
 }
 
-.fontS-10 {
+.fontS-9-14 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 17px;
+  letter-spacing: -0.05em;
+}
+
+.fontS-10-15 {
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
   line-height: 15px;
+  letter-spacing: -0.09em;
 }
 
 .fontS-12 {
@@ -204,7 +217,13 @@ h1 {
 /*----------About-----------*/
 
 #about {
-  display: none
+  display: none;
+}
+
+.about-main {
+  background: #f7f7f8 url(./visuals/about_bg_main.png) center no-repeat;
+  height: auto;
+  overflow: auto;
 }
 
 /*-------------Footer-----------*/
@@ -228,6 +247,16 @@ h1 {
     font-weight: 900;
     font-size: 48px;
     line-height: 64px;
+  }
+
+  .fontS-9-14 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .fontS-10-15 {
+    font-size: 15px;
+    line-height: 21px;
   }
 
   .fontS-prog-14 {
