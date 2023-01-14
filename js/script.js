@@ -16,6 +16,7 @@ const aboutCo = document.getElementById('about');
 /* ------------- Buttons ------------- */
 const btnAbout = document.getElementById('about-btn');
 const btnHome = document.getElementById('home');
+const btnHomeMnue = document.querySelector('.homeM');
 
 
 /* ------------- Show About ------------- */
@@ -30,6 +31,15 @@ btnAbout.addEventListener('click', () => {
 
 /* ------------- Show Home ------------- */
 btnHome.addEventListener('click', () => {
+    introCo.style.display = 'block';
+    programCo.style.display = 'block';
+    speakersCo.style.display = 'block';
+    aboutCo.style.display = 'none';
+    partnersCo.classList.remove('d-md-none')
+    footerCo.classList.remove('darkOnDt')
+  });
+
+  btnHomeMnue.addEventListener('click', () => {
     introCo.style.display = 'block';
     programCo.style.display = 'block';
     speakersCo.style.display = 'block';
