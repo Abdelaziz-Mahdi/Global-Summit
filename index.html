@@ -48,41 +48,68 @@
             <button
               class="navbar-toggler border border-0"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 me-2 mb-lg-0">
-                <li class="nav-item p-2">
-                  <a
-                    class="nav-link active"
-                    id="about-btn"
-                    aria-current="page"
-                    href="#"
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item p-2">
-                  <a class="nav-link" href="#">Program</a>
-                </li>
-                <li class="nav-item p-2">
-                  <a class="nav-link" href="#">Join</a>
-                </li>
-                <li class="nav-item p-2">
-                  <a class="nav-link" href="#">Sponsers</a>
-                </li>
-                <li class="nav-item p-2">
-                  <a class="nav-link" href="#">News</a>
-                </li>
-              </ul>
-              <button class="btn orange-font orange-border" type="submit">
-                Campain
-              </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <a
+                  class="offcanvas-title homeM"
+                  id="offcanvasNavbarLabel"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                  ><img
+                    class="devfest-icon"
+                    src="./visuals/DF22-Bevy-EventThumb@2x_togjfee.png"
+                    alt="devfest-icon"
+                /></a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item p-2">
+                    <a
+                      class="nav-link active"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      id="about-btn"
+                      aria-current="page"
+                      href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="#">Program</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="#">Join</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="#">Sponsers</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <button class="btn orange-font orange-border" type="submit">
+                      Campain
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -250,19 +277,19 @@
           <div class="col-md-6 mb-3 mt-3">
             <div class="row row-cols-2">
               <img
-                class="col-4"
+                class="col-4 mb-3 mt-3"
                 src="./visuals/speaker_01.png"
                 alt="speaker-one"
               />
               <div class="col-8 text-start text-holder">
                 <h3 class="mt-3">Name Name</h3>
                 <p
-                  class="fontS-10 mb-3 mt-3 position-relative secondary-title orange-font"
+                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
                 >
                   Berkman Professor of Entrepreneurial Legal Studies at Harvard
                   Law School
                 </p>
-                <p class="fontS-8">
+                <p class="fontS-9-14">
                   Benkler studies commons-based peer production, and published
                   his seminal book, The Wealth of Networks in 2006
                 </p>
@@ -272,19 +299,19 @@
           <div class="col-md-6 mb-3 mt-3">
             <div class="row row-cols-2">
               <img
-                class="col-4"
+                class="col-4 mb-3 mt-3"
                 src="./visuals/speaker_01.png"
                 alt="speaker-one"
               />
               <div class="col-8 text-start text-holder">
                 <h3 class="mt-3">Name Name</h3>
                 <p
-                  class="fontS-10 mb-3 mt-3 position-relative secondary-title orange-font"
+                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
                 >
                   Berkman Professor of Entrepreneurial Legal Studies at Harvard
                   Law School
                 </p>
-                <p class="fontS-8">
+                <p class="fontS-9-14">
                   Benkler studies commons-based peer production, and published
                   his seminal book, The Wealth of Networks in 2006
                 </p>
@@ -294,19 +321,19 @@
           <div class="col-md-6 mb-3 mt-3">
             <div class="row row-cols-2">
               <img
-                class="col-4"
+                class="col-4 mb-3 mt-3"
                 src="./visuals/speaker_01.png"
                 alt="speaker-one"
               />
               <div class="col-8 text-start text-holder">
                 <h3 class="mt-3">Name Name</h3>
                 <p
-                  class="fontS-10 mb-3 mt-3 position-relative secondary-title orange-font"
+                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
                 >
                   Berkman Professor of Entrepreneurial Legal Studies at Harvard
                   Law School
                 </p>
-                <p class="fontS-8">
+                <p class="fontS-9-14">
                   Benkler studies commons-based peer production, and published
                   his seminal book, The Wealth of Networks in 2006
                 </p>
@@ -316,19 +343,19 @@
           <div class="col-md-6 mb-3 mt-3">
             <div class="row row-cols-2">
               <img
-                class="col-4"
+                class="col-4 mb-3 mt-3"
                 src="./visuals/speaker_01.png"
                 alt="speaker-one"
               />
               <div class="col-8 text-start text-holder">
                 <h3 class="mt-3">Name Name</h3>
                 <p
-                  class="fontS-10 mb-3 mt-3 position-relative secondary-title orange-font"
+                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
                 >
                   Berkman Professor of Entrepreneurial Legal Studies at Harvard
                   Law School
                 </p>
-                <p class="fontS-8">
+                <p class="fontS-9-14">
                   Benkler studies commons-based peer production, and published
                   his seminal book, The Wealth of Networks in 2006
                 </p>
@@ -338,19 +365,19 @@
           <div class="col-md-6 mb-3 mt-3">
             <div class="row row-cols-2">
               <img
-                class="col-4"
+                class="col-4 mb-3 mt-3"
                 src="./visuals/speaker_01.png"
                 alt="speaker-one"
               />
               <div class="col-8 text-start text-holder">
                 <h3 class="mt-3">Name Name</h3>
                 <p
-                  class="fontS-10 mb-3 mt-3 position-relative secondary-title orange-font"
+                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
                 >
                   Berkman Professor of Entrepreneurial Legal Studies at Harvard
                   Law School
                 </p>
-                <p class="fontS-8">
+                <p class="fontS-9-14">
                   Benkler studies commons-based peer production, and published
                   his seminal book, The Wealth of Networks in 2006
                 </p>
@@ -360,19 +387,19 @@
           <div class="col-md-6 mb-3 mt-3">
             <div class="row row-cols-2">
               <img
-                class="col-4"
+                class="col-4 mb-3 mt-3"
                 src="./visuals/speaker_01.png"
                 alt="speaker-one"
               />
               <div class="col-8 text-start text-holder">
                 <h3 class="mt-3">Name Name</h3>
                 <p
-                  class="fontS-10 mb-3 mt-3 position-relative secondary-title orange-font"
+                  class="fontS-10-15 mb-3 mt-3 position-relative secondary-title orange-font"
                 >
                   Berkman Professor of Entrepreneurial Legal Studies at Harvard
                   Law School
                 </p>
-                <p class="fontS-8">
+                <p class="fontS-9-14">
                   Benkler studies commons-based peer production, and published
                   his seminal book, The Wealth of Networks in 2006
                 </p>
@@ -383,119 +410,110 @@
       </div>
     </section>
     <section id="about" class="">
-      <div class="container">
-        <div class="container text-center">
-          <header class="main-title position-relative">
-            <h2 class="text-light">Main Program</h2>
-          </header>
-          <section class="">
-            <ul
-              class="row ps-2 pe-2 ps-md-0 pe-md-0 pb-4 pt-4 d-flex justify-content-center"
+      <div class="about-main d-flex justify-content-center">
+        <section class="text-center">
+          <div class="main-title position-relative m-5">
+            <h2 class="hOne-font orange-font">
+              Learn, build, and connect<br />devfest 2022
+            </h2>
+          </div>
+          <p
+            class="d-block d-md-none white-bg border border-2 m-5 p-4 ps-5 pe-5 text-wrap"
+          >
+            DevFest is a global community-driven tech conference, hosted by the
+            Google Developer Groups (GDG) community. Each DevFest event is
+            crafted by its GDG organizers to fit the learning needs and
+            interests of their local developer community, with a strong focus on
+            knowledge exchange, networking, and learning about Google developer
+            technologies.
+          </p>
+          <p
+            class="d-none d-md-block white-bg border border-2 m-5 p-4 ps-5 pe-5 text-wrap"
+          >
+            DevFest is a global community-driven tech conference, hosted by
+            the<br />
+            Google Developer Groups (GDG) community. Each DevFest event is
+            crafted<br />
+            by its GDG organizers to fit the learning needs and interests of
+            their<br />
+            local developer community, with a strong focus on knowledge
+            exchange,<br />
+            networking, and learning about Google developer technologies.
+          </p>
+          <div class="m-5 pb-5">
+            <p>
+              Join a local group and meet local developers with similar
+              interests.
+            </p>
+            <a class="btn-lg text-dark fw-semibold" href="#" role="button"
+              >Find a Google Developer Group near you ></a
             >
-              <li
-                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-              >
-                <img
-                  src="./visuals/program_icon_01.png"
-                  alt="podium"
-                  class="pt-md-2 col-md-auto col-2 program-icon"
-                />
-                <h6
-                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-                >
-                  Hello
-                </h6>
-                <p
-                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-                >
-                  Listen to the speakers from various countries about the
-                  messages.
-                </p>
-              </li>
-              <li
-                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-              >
-                <img
-                  src="./visuals/program_icon_02.png"
-                  alt="podium"
-                  class="pt-md-2 col-md-auto col-2 program-icon"
-                />
-                <h6
-                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-                >
-                  Exhibition
-                </h6>
-                <p
-                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-                >
-                  pplying CC license of artists, organized from Art Center Nabi
-                </p>
-              </li>
-              <li
-                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-              >
-                <img
-                  src="./visuals/program_icon_03.png"
-                  alt="podium"
-                  class="pt-md-2 col-md-auto col-2 program-icon"
-                />
-                <h6
-                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-                >
-                  Forum
-                </h6>
-                <p
-                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-                >
-                  share your thoughts and opinions with experts for each topic.
-                </p>
-              </li>
-              <li
-                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-              >
-                <img
-                  src="./visuals/program_icon_04.png"
-                  alt="podium"
-                  class="pt-md-2 col-md-auto col-2 program-icon"
-                />
-                <h6
-                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-                >
-                  Workshop
-                </h6>
-                <p
-                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-                >
-                  Try creating your own work using open source license.
-                </p>
-              </li>
-              <li
-                class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-              >
-                <img
-                  src="./visuals/program_icon_05.png"
-                  alt="podium"
-                  class="pt-md-2 col-md-auto col-2 program-icon"
-                />
-                <h6
-                  class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-                >
-                  G Ignite
-                </h6>
-                <p
-                  class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-                >
-                  get opportunities to network with Coders around the world.
-                </p>
-              </li>
-            </ul>
-          </section>
-          <footer>
-            <a class="btn-lg text-light" href="#" role="button"
-              >Join Global Summit</a
-            >
-          </footer>
-        </div>
+          </div>
+        </section>
+      </div>
+      <div class="d-flex justify-content-center border border-2">
+        <section class="text-center">
+          <div class="main-title position-relative m-5">
+            <h2 class="fw-semibold">Google Developer Group</h2>
+          </div>
+          <p class="d-block d-md-none white-bg m-5 p-4 ps-5 pe-5 text-wrap">
+            Google Developer Groups represents a network of technical
+            communities that offer opportunities for professional development
+            and connection.
+          </p>
+          <p class="d-none d-md-block white-bg m-5 p-4 ps-5 pe-5 text-wrap">
+            Google Developer Groups represents a network of technical
+            communities that offer <br />opportunities for professional
+            development and connection. Those who join can learn about the
+            latest Google<br />
+            tools and technologies, and can meet with local developers with
+            similar interests.
+          </p>
+          <div class="m-5">
+            <img
+              class="w-25 border border-2"
+              src="./visuals/gdg-member-badge.png"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+      <div class="d-flex justify-content-center">
+        <section class="text-center">
+          <div class="main-title position-relative m-5">
+            <h2 class="fw-semibold">Earnable badges</h2>
+          </div>
+          <p class="white-bg mb-5 pb-4 ps-5 pe-5 text-wrap">
+            Earn these badges when you visit and register for 2022 DevFest
+            event.
+          </p>
+          <div
+            class="d-flex d-md-none m-5 flex-column justify-content-center align-items-center"
+          >
+            <img
+              class="w-50 m-1 border border-2"
+              src="./visuals/badge-visit.svg"
+              alt=""
+            />
+            <img
+              class="w-50 m-1 border border-2"
+              src="./visuals/badge-register.svg"
+              alt=""
+            />
+          </div>
+          <div class="d-none d-md-flex m-5 justify-content-center">
+            <img
+              class="w-50 m-1 border border-2"
+              src="./visuals/badge-visit.svg"
+              alt=""
+            />
+            <img
+              class="w-50 m-1 border border-2"
+              src="./visuals/badge-register.svg"
+              alt=""
+            />
+          </div>
+        </section>
       </div>
     </section>
     <section id="partners" class="Partners text-center pt-5 pb-5 gray-dk">
@@ -527,7 +545,12 @@
     </section>
     <footer id="footer" class="row d-md-flex pt-4 pb-4 ps-lg-5 ps-md-2">
       <div class="ms-md-3 col-md-auto col-6 text-center">
-        <img id="logo" class="ps-2 pt-4 gdg" src="./visuals/logo_dark_gdg.svg" alt="" />
+        <img
+          id="logo"
+          class="ps-2 pt-4 gdg"
+          src="./visuals/logo_dark_gdg.svg"
+          alt=""
+        />
       </div>
       <div class="col-md-auto col-6 pt-lg-2 pt-md-2 ps-md-3 ps-lg-4 pe-3">
         <h6 class="fontS-12 pt-3 pt-md-0">
