@@ -96,7 +96,7 @@ const speakersArray = [
   },
 ];
 
-/* Speakers section markup*/
+/* Speakers section markup */
 
 const speakersHtml = () => {
   const container = document.getElementById('speakers-card');
