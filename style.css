@@ -7,6 +7,11 @@
   --color-gray: #f8f4f4;
 }
 
+.darkOnDt {
+  background-color: var(--font-white);
+  color: var(--font-dk);
+}
+
 .white-font {
   color: var(--font-white);
 }
@@ -34,6 +39,10 @@
 .gray-filter {
   filter: invert(19%) sepia(5%) saturate(2%) hue-rotate(2deg) brightness(93%)
     contrast(94%);
+}
+
+.color-inv {
+  mix-blend-mode: color;
 }
 
 .orange-border {
@@ -192,6 +201,12 @@ h1 {
   transform: translateX(0%);
 }
 
+/*----------About-----------*/
+
+#about {
+  display: none
+}
+
 /*-------------Footer-----------*/
 
 .gdg {
@@ -201,6 +216,11 @@ h1 {
 @media only screen and (min-width: 768px) {
   nav {
     background-color: white;
+  }
+
+  .darkOnDt {
+    background-color: var(--font-dk);
+    color: var(--font-white);
   }
 
   .hOne-font {
