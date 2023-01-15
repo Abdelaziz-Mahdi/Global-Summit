@@ -1,23 +1,268 @@
 :root {
-  --font-color: #333;
+  --font-gray: #333;
+  --font-dk: #333;
   --font-white: white;
   --color-black: #272a31;
-  --color-black: #ec5242;
-  --color-black: #d3d3d3;
+  --color-orange: #ec5242;
+  --color-gray: #f8f4f4;
+}
+
+.darkOnDt {
+  background-color: var(--font-white);
+  color: var(--font-dk);
 }
 
 .white-font {
   color: var(--font-white);
 }
 
-* {
+.gray-font {
+  color: var(--font-gray);
+}
+
+.orange-font {
+  color: var(--color-orange);
+}
+
+.gray-bg {
+  background-color: var(--color-gray);
+}
+
+.gray-dk {
+  background-color: var(--font-dk);
+}
+
+.orange-bg {
+  background-color: var(--color-orange);
+}
+
+.white-bg {
+  background-color: var(--font-white);
+}
+
+.gray-filter {
+  filter: invert(19%) sepia(5%) saturate(2%) hue-rotate(2deg) brightness(93%) contrast(94%);
+}
+
+.color-inv {
+  mix-blend-mode: color;
+}
+
+.orange-border {
+  border: 2px;
+  border-color: var(--color-orange);
+  border-style: solid;
+}
+
+.fontS-8 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 14px;
+}
+
+.fontS-9-14 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 17px;
+  letter-spacing: -0.05em;
+}
+
+.fontS-10-15 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.09em;
+}
+
+.fontS-12 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.fontS-127 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.fontS-prog-14 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.2712px;
+  line-height: 25px;
+}
+
+.hOne-font {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+*,
+#program-section p {
   list-style: none;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+ul {
+  padding: 0;
+}
+
 body {
   font-family: "Lato", sans-serif;
+}
+
+.lexend {
   font-family: "Lexend Deca", sans-serif;
+}
+
+/* ---------------- Nav Bar --------------- */
+
+.fa-facebook-f,
+.fa-twitter {
+  color: white;
+}
+
+.devfest-icon {
+  width: 50px;
+  mix-blend-mode: luminosity;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--color-orange);
+}
+
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link .active {
+  color: var(--color-orange);
+}
+
+/* -----Intro----- */
+
+#intro-rap {
+  background-image: url(./visuals/mobile_intro_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  background-image: url(./visuals/text-clip.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+#program-section {
+  background-image: url(./visuals/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: var(--font-dk);
+}
+
+.main-title::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: var(--color-orange);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#program-section p {
+  color: var(--font-white);
+}
+
+#program-section li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 16px;
+}
+
+/* ----------featured-speakers----------- */
+
+.secondary-title::after {
+  content: "";
+  width: 25px;
+  height: 0.5px;
+  background-color: var(--color-orange);
+  position: absolute;
+  bottom: -10px;
+  left: 0%;
+  transform: translateX(0%);
+}
+
+/* ----------About----------- */
+
+#about {
+  display: none;
+}
+
+.about-main {
+  background: #f7f7f8 url(./visuals/about_bg_main.png) center no-repeat;
+  height: auto;
+  overflow: auto;
+}
+
+/* -------------Footer----------- */
+
+.gdg {
+  max-width: 170px;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: white;
+  }
+
+  .darkOnDt {
+    background-color: var(--font-dk);
+    color: var(--font-white);
+  }
+
+  .hOne-font {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .fontS-9-14 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .fontS-10-15 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .fontS-prog-14 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .gdg {
+    max-width: 250px;
+  }
+
+  .p50 {
+    max-width: 70%;
+  }
 }
