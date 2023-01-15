@@ -1,453 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Lexend+Deca:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Global-Summit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/2399167a2e.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body id="body">
-    <section id="intro-rap">
-      <header id="header">
-        <div class="top-bar d-none d-md-block gray-dk">
-          <ul class="nav justify-content-end container align-items-center">
-            <li class="nav-item">
-              <i class="fa-brands m-2 fa-facebook-f"></i>
-            </li>
-            <li class="nav-item">
-              <i class="fa-brands m-2 fa-twitter"></i>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light fontS-12" href="#">English</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light fontS-12" href="#">My Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light fontS-12" href="#">Logout</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Desktop Navbar Start -->
-        <nav class="navbar navbar-expand-md">
-          <div class="container-md">
-            <a id="home" class="navbar-brand d-none d-md-block" href="#"
-              ><img
-                class="devfest-icon"
-                src="./visuals/DF22-Bevy-EventThumb@2x_togjfee.png"
-                alt="devfest-icon"
-            /></a>
-            <button
-              class="navbar-toggler border border-0"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="toggler"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <a
-                  class="offcanvas-title homeM"
-                  id="offcanvasNavbarLabel"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                  ><img
-                    class="devfest-icon"
-                    src="./visuals/DF22-Bevy-EventThumb@2x_togjfee.png"
-                    alt="devfest-icon"
-                /></a>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item p-2">
-                    <a
-                      class="nav-link active"
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      aria-current="page"
-                      id="about-btn"
-                      href="#"
-                      >About</a
-                    >
-                  </li>
-                  <li class="nav-item p-2">
-                    <a class="nav-link" href="#program-section">Program</a>
-                  </li>
-                  <li class="nav-item p-2">
-                    <a class="nav-link" href="#speakers">Speakers</a>
-                  </li>
-                  <li class="nav-item p-2">
-                    <a class="nav-link" href="#partners">Sponsers</a>
-                  </li>
-                  <li class="nav-item p-2">
-                    <a class="nav-link" href="https://gdg.community.dev/"
-                      >GDG</a
-                    >
-                  </li>
-                  <li class="nav-item p-2">
-                    <a
-                      class="btn orange-font orange-border"
-                      href="https://gdg.community.dev/events/details/google-gdg-cairo-presents-devfest-cairo-2022/"
-                    >
-                      Campain
-                    </a>
-                  </li>
-                </ul>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Lexend+Deca:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <title>Global-Summit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/2399167a2e.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+  <section id="intro-rap">
+    <header id="header">
+      <div class="top-bar d-none d-md-block gray-dk">
+        <ul class="nav justify-content-end container align-items-center">
+          <li class="nav-item">
+            <i class="fa-brands m-2 fa-facebook-f"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fa-brands m-2 fa-twitter"></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fontS-12" href="#">English</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fontS-12" href="#">My Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fontS-12" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Desktop Navbar Start -->
+      <nav class="navbar navbar-expand-md">
+        <div class="container-md">
+          <a id="home" class="navbar-brand d-none d-md-block" href="#"><img class="devfest-icon"
+              src="./visuals/DF22-Bevy-EventThumb@2x_togjfee.png" alt="devfest-icon" /></a>
+          <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="toggler">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a class="offcanvas-title homeM" id="offcanvasNavbarLabel" data-bs-dismiss="offcanvas"
+                aria-label="Close"><img class="devfest-icon" src="./visuals/DF22-Bevy-EventThumb@2x_togjfee.png"
+                  alt="devfest-icon" /></a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item p-2">
+                  <a class="nav-link active" data-bs-dismiss="offcanvas" aria-label="Close" aria-current="page"
+                    id="about-btn" href="#">About</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link" href="#program-section">Program</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link" href="#speakers">Speakers</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link" href="#partners">Sponsers</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link" href="https://gdg.community.dev/">GDG</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="btn orange-font orange-border"
+                    href="https://gdg.community.dev/events/details/google-gdg-cairo-presents-devfest-cairo-2022/">
+                    Campain
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav>
-      </header>
-      <!-- Intro content -->
-      <div id="intro-container" class="pt-3 pb-5">
-        <article id="intro-article" class="container-md d-lg-block p-3">
-          <h3 class="p-1 orange-font">"What is DevFest?"</h3>
-          <h1 class="p-1 hOne-font lexend text-uppercase">
-            Google Developer Group <br />
-            DevFest 2022
-          </h1>
-          <p
-            class="p50 mt-3 p-3 me-md-5 gray-font gray-bg border border-3 border-white fontS-12"
-          >
-            DevFests are local tech conferences hosted by Google Developer
-            Groups (GDG) around the world. Each DevFest event is crafted by its
-            local organizers to fit the needs and interests of its local
-            developer community. Whether it be through hands-on learning
-            experiences, technical talks delivered in local languages by
-            experts, or by simply meeting fellow local developers, DevFest
-            attendees learn how to build together and innovate on Google's
-            developer tools.
-          </p>
-          <h2 class="p-1 gray-font fw-bold">2022.12.09(FRI) ~ 10(SAT)</h2>
-          <p class="p-1 gray-font fs-6">
-            @ Canadian International College, New Cairo, Egypt.
-          </p>
-        </article>
-      </div>
-    </section>
-    <section id="program-section" class="pt-5 pb-5">
-      <div class="container text-center">
-        <header class="main-title position-relative">
-          <h2 class="text-light">Main Program</h2>
-        </header>
-        <section class="">
-          <ul
-            class="row ps-2 pe-2 ps-md-0 pe-md-0 pb-4 pt-4 d-flex justify-content-center"
-          >
-            <li
-              class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-            >
-              <img
-                src="./visuals/program_icon_01.png"
-                alt="podium"
-                class="pt-md-2 col-md-auto col-2 program-icon"
-              />
-              <h6
-                class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-              >
-                Sessions
-              </h6>
-              <p
-                class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-              >
-                Listen to the speakers from various countries about the
-                messages.
-              </p>
-            </li>
-            <li
-              class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-            >
-              <img
-                src="./visuals/program_icon_02.png"
-                alt="podium"
-                class="pt-md-2 col-md-auto col-2 program-icon"
-              />
-              <h6
-                class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-              >
-                content
-              </h6>
-              <p
-                class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-              >
-                Google technologies in areas like Android, Flutter and so much
-                more!
-              </p>
-            </li>
-            <li
-              class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-            >
-              <img
-                src="./visuals/program_icon_03.png"
-                alt="podium"
-                class="pt-md-2 col-md-auto col-2 program-icon"
-              />
-              <h6
-                class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-              >
-                Forum
-              </h6>
-              <p
-                class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-              >
-                share your thoughts and opinions with experts for each topic.
-              </p>
-            </li>
-            <li
-              class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-            >
-              <img
-                src="./visuals/program_icon_04.png"
-                alt="podium"
-                class="pt-md-2 col-md-auto col-2 program-icon"
-              />
-              <h6
-                class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-              >
-                Workshop
-              </h6>
-              <p
-                class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-              >
-                Full-day workshops, hands-on experiences, and debugging events.
-              </p>
-            </li>
-            <li
-              class="ps-0 p-md-2 col-md-2 row m-1 justify-content-center align-items-center"
-            >
-              <img
-                src="./visuals/program_icon_05.png"
-                alt="podium"
-                class="pt-md-2 col-md-auto col-2 program-icon"
-              />
-              <h6
-                class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2"
-              >
-                Networking
-              </h6>
-              <p
-                class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127"
-              >
-                get opportunities to network with Coders around the world.
-              </p>
-            </li>
-          </ul>
-        </section>
-        <footer>
-          <a class="btn-lg text-light" href="#" role="button"
-            >Join devfest 2022</a
-          >
-        </footer>
-      </div>
-    </section>
-    <section id="speakers" class="featured-speakers text-center pt-5 pb-5">
-      <div class="container">
-        <!----- Speakers Header ------->
-        <div class="main-title position-relative">
-          <h2>Featured Speakers</h2>
         </div>
-        <!----- Speakers Body ------->
-        <ul
-          id="speakers-card"
-          class="row pt-5 pb-5 ps-md-3 pe-md-3 ps-lg-3 pe-lg-3"
-        ></ul>
-      </div>
-    </section>
-    <section id="about">
-      <div class="about-main d-flex justify-content-center">
-        <section class="text-center">
-          <div class="main-title position-relative m-5">
-            <h2 class="hOne-font orange-font">
-              Learn, build, and connect<br />devfest 2022
-            </h2>
-          </div>
-          <p
-            class="d-block d-md-none white-bg border border-2 m-5 p-4 ps-5 pe-5 text-wrap"
-          >
-            DevFest is a global community-driven tech conference, hosted by the
-            Google Developer Groups (GDG) community. Each DevFest event is
-            crafted by its GDG organizers to fit the learning needs and
-            interests of their local developer community, with a strong focus on
-            knowledge exchange, networking, and learning about Google developer
-            technologies.
-          </p>
-          <p
-            class="d-none d-md-block white-bg border border-2 m-5 p-4 ps-5 pe-5 text-wrap"
-          >
-            DevFest is a global community-driven tech conference, hosted by
-            the<br />
-            Google Developer Groups (GDG) community. Each DevFest event is
-            crafted<br />
-            by its GDG organizers to fit the learning needs and interests of
-            their<br />
-            local developer community, with a strong focus on knowledge
-            exchange,<br />
-            networking, and learning about Google developer technologies.
-          </p>
-          <div class="m-5 pb-5">
-            <p>
-              Join a local group and meet local developers with similar
-              interests.
+      </nav>
+    </header>
+    <!-- Intro content -->
+    <div id="intro-container" class="pt-3 pb-5">
+      <article id="intro-article" class="container-md d-lg-block p-3">
+        <h3 class="p-1 orange-font">"What is DevFest?"</h3>
+        <h1 class="p-1 hOne-font lexend text-uppercase">
+          Google Developer Group <br />
+          DevFest 2022
+        </h1>
+        <p class="p50 mt-3 p-3 me-md-5 gray-font gray-bg border border-3 border-white fontS-12">
+          DevFests are local tech conferences hosted by Google Developer
+          Groups (GDG) around the world. Each DevFest event is crafted by its
+          local organizers to fit the needs and interests of its local
+          developer community. Whether it be through hands-on learning
+          experiences, technical talks delivered in local languages by
+          experts, or by simply meeting fellow local developers, DevFest
+          attendees learn how to build together and innovate on Google's
+          developer tools.
+        </p>
+        <h2 class="p-1 gray-font fw-bold">2022.12.09(FRI) ~ 10(SAT)</h2>
+        <p class="p-1 gray-font fs-6">
+          @ Canadian International College, New Cairo, Egypt.
+        </p>
+      </article>
+    </div>
+  </section>
+  <section id="program-section" class="pt-5 pb-5">
+    <div class="container text-center">
+      <header class="main-title position-relative">
+        <h2 class="text-light">Main Program</h2>
+      </header>
+      <section class="">
+        <ul class="row ps-2 pe-2 ps-md-0 pe-md-0 pb-4 pt-4 d-flex justify-content-center">
+          <li class=" p-3 col-md-2 row m-1 justify-content-center align-items-center">
+            <img src="./visuals/program_icon_01.png" alt="podium" class="pt-md-2 col-md-auto col-2 program-icon" />
+            <h6 class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2">
+              GDG Sessions
+            </h6>
+            <p class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127">
+              Listen to the speakers from various countries about the
+              messages.
             </p>
-            <a class="btn-lg text-dark fw-semibold" href="#" role="button"
-              >Find a Google Developer Group near you ></a
-            >
-          </div>
-        </section>
+          </li>
+          <li class=" p-3 col-md-2 row m-1 justify-content-center align-items-center">
+            <img src="./visuals/program_icon_02.png" alt="podium" class="pt-md-2 col-md-auto col-2 program-icon" />
+            <h6 class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2">
+              GDG content
+            </h6>
+            <p class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127">
+              Google technologies in areas like Android, Flutter and so much
+              more!
+            </p>
+          </li>
+          <li class=" p-3 col-md-2 row m-1 justify-content-center align-items-center">
+            <img src="./visuals/program_icon_03.png" alt="podium" class="pt-md-2 col-md-auto col-2 program-icon" />
+            <h6 class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2">
+              GDG Forum
+            </h6>
+            <p class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127">
+              Share your thoughts and opinions with experts for each topic.
+            </p>
+          </li>
+          <li class=" p-3 col-md-2 row m-1 justify-content-center align-items-center">
+            <img src="./visuals/program_icon_04.png" alt="podium" class="pt-md-2 col-md-auto col-2 program-icon" />
+            <h6 class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2">
+             Workshops
+            </h6>
+            <p class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127">
+              Full-day workshops, hands-on experiences, and debugging events.
+            </p>
+          </li>
+          <li class=" p-3 col-md-2 row m-1 justify-content-center align-items-center">
+            <img src="./visuals/program_icon_05.png" alt="podium" class="pt-md-2 col-md-auto col-2 program-icon" />
+            <h6 class="col-md-12 text-start text-md-center col-3 orange-font fontS-prog-14 mb-0 m-md-2">
+              Networking
+            </h6>
+            <p class="col-md-12 col-7 ps-1 ps-md-0 text-start text-md-center fontS-127">
+              Get opportunities to network with Coders around the world.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <a class="btn-lg text-light" href="#" role="button">Join devfest 2022</a>
+      </footer>
+    </div>
+  </section>
+  <section id="speakers" class="featured-speakers text-center pt-5 pb-5">
+    <div class="container">
+      <!----- Speakers Header ------->
+      <div class="main-title position-relative">
+        <h2>Featured Speakers</h2>
       </div>
-      <div class="d-flex justify-content-center border border-2">
-        <section class="text-center">
-          <div class="main-title position-relative m-5">
-            <h2 class="fw-semibold">Google Developer Group</h2>
-          </div>
-          <p class="d-block d-md-none white-bg m-5 p-4 ps-5 pe-5 text-wrap">
-            Google Developer Groups represents a network of technical
-            communities that offer opportunities for professional development
-            and connection.
+      <!----- Speakers Body ------->
+      <ul id="speakers-card" class="row pt-5 pb-5 ps-md-3 pe-md-3 ps-lg-3 pe-lg-3"></ul>
+    </div>
+  </section>
+  <section id="about">
+    <div class="about-main d-flex justify-content-center">
+      <section class="text-center">
+        <div class="main-title position-relative m-5">
+          <h2 class="hOne-font orange-font">
+            Learn, build, and connect<br />devfest 2022
+          </h2>
+        </div>
+        <p class="d-block d-md-none white-bg border border-2 m-5 p-4 ps-5 pe-5 text-wrap">
+          DevFest is a global community-driven tech conference, hosted by the
+          Google Developer Groups (GDG) community. Each DevFest event is
+          crafted by its GDG organizers to fit the learning needs and
+          interests of their local developer community, with a strong focus on
+          knowledge exchange, networking, and learning about Google developer
+          technologies.
+        </p>
+        <p class="d-none d-md-block white-bg border border-2 m-5 p-4 ps-5 pe-5 text-wrap">
+          DevFest is a global community-driven tech conference, hosted by
+          the<br />
+          Google Developer Groups (GDG) community. Each DevFest event is
+          crafted<br />
+          by its GDG organizers to fit the learning needs and interests of
+          their<br />
+          local developer community, with a strong focus on knowledge
+          exchange,<br />
+          networking, and learning about Google developer technologies.
+        </p>
+        <div class="m-5 pb-5">
+          <p>
+            Join a local group and meet local developers with similar
+            interests.
           </p>
-          <p class="d-none d-md-block white-bg m-5 p-4 ps-5 pe-5 text-wrap">
-            Google Developer Groups represents a network of technical
-            communities that offer <br />opportunities for professional
-            development and connection. Those who join can learn about the
-            latest Google<br />
-            tools and technologies, and can meet with local developers with
-            similar interests.
-          </p>
-          <div class="m-5">
-            <img
-              class="w-25 border border-2"
-              src="./visuals/gdg-member-badge.png"
-              alt=""
-            />
-          </div>
-        </section>
-      </div>
-      <div class="d-flex justify-content-center">
-        <section class="text-center">
-          <div class="main-title position-relative m-5">
-            <h2 class="fw-semibold">Earnable badges</h2>
-          </div>
-          <p class="white-bg mb-5 pb-4 ps-5 pe-5 text-wrap">
-            Earn these badges when you visit and register for 2022 DevFest
-            event.
-          </p>
-          <div
-            class="d-flex d-md-none m-5 flex-column justify-content-center align-items-center"
-          >
-            <img
-              class="w-50 m-1 border border-2"
-              src="./visuals/badge-visit.svg"
-              alt=""
-            />
-            <img
-              class="w-50 m-1 border border-2"
-              src="./visuals/badge-register.svg"
-              alt=""
-            />
-          </div>
-          <div class="d-none d-md-flex m-5 justify-content-center">
-            <img
-              class="w-50 m-1 border border-2"
-              src="./visuals/badge-visit.svg"
-              alt=""
-            />
-            <img
-              class="w-50 m-1 border border-2"
-              src="./visuals/badge-register.svg"
-              alt=""
-            />
-          </div>
-        </section>
-      </div>
-    </section>
-    <section id="partners" class="Partners text-center pt-5 pb-5 gray-dk">
-      <div class="container">
-        <!----- Partners ------->
-        <header class="main-title position-relative">
-          <h2 class="text-light">Partners</h2>
-        </header>
-        <section>
-          <ul class="row d-flex justify-content-center pt-5">
-            <li class="col-md-auto p-2 m-2 col-4">
-              <img src="./visuals/wtm-logo.png" alt="google-ic" />
-            </li>
-            <li class="col-md-auto p-2 m-2 col-4">
-              <img src="./visuals/CIC-logo.png" alt="google-ic" />
-            </li>
-            <li class="col-md-auto pt-4 p-2 m-2 col-4">
-              <img src="./visuals/mozilla-logo.png" alt="google-ic" />
-            </li>
-            <li class="col-md-auto p-2 m-2 col-6">
-              <img src="./visuals/github-logo.png" alt="google-ic" />
-            </li>
-            <li class="col-md-auto pt-4 p-2 m-2 col-6">
-              <img src="./visuals/slack-logo.png" alt="google-ic" />
-            </li>
-          </ul>
-        </section>
-      </div>
-    </section>
-    <footer id="footer" class="row d-md-flex pt-4 pb-4 ps-lg-5 ps-md-2">
-      <div class="ms-md-3 col-md-auto col-6 text-center">
-        <img
-          id="logo"
-          class="ps-2 pt-4 gdg"
-          src="./visuals/logo_dark_gdg.svg"
-          alt=""
-        />
-      </div>
-      <div class="col-md-auto col-6 pt-lg-2 pt-md-2 ps-md-3 ps-lg-4 pe-3">
-        <h6 class="fontS-12 pt-3 pt-md-0">
-          Google Developers under terms that explicitly encourage people to
-          take, modify, reuse, re-purpose, and remix our work as they see fit.
-        </h6>
-        <h6 class="fontS-12 d-none d-md-block">
-          Proper attribution is required when you reuse or create modified
-          versions of content that appears on a page made available under the
-          terms of the Creative Commons Attribution license.
-        </h6>
-      </div>
-    </footer>
-    <script src="./js/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+          <a class="btn-lg text-dark fw-semibold" href="#" role="button">Find a Google Developer Group near you ></a>
+        </div>
+      </section>
+    </div>
+    <div class="d-flex justify-content-center border border-2">
+      <section class="text-center">
+        <div class="main-title position-relative m-5">
+          <h2 class="fw-semibold">Google Developer Group</h2>
+        </div>
+        <p class="d-block d-md-none white-bg m-5 p-4 ps-5 pe-5 text-wrap">
+          Google Developer Groups represents a network of technical
+          communities that offer opportunities for professional development
+          and connection.
+        </p>
+        <p class="d-none d-md-block white-bg m-5 p-4 ps-5 pe-5 text-wrap">
+          Google Developer Groups represents a network of technical
+          communities that offer <br />opportunities for professional
+          development and connection. Those who join can learn about the
+          latest Google<br />
+          tools and technologies, and can meet with local developers with
+          similar interests.
+        </p>
+        <div class="m-5">
+          <img class="w-25 border border-2" src="./visuals/gdg-member-badge.png" alt="" />
+        </div>
+      </section>
+    </div>
+    <div class="d-flex justify-content-center">
+      <section class="text-center">
+        <div class="main-title position-relative m-5">
+          <h2 class="fw-semibold">Earnable badges</h2>
+        </div>
+        <p class="white-bg mb-5 pb-4 ps-5 pe-5 text-wrap">
+          Earn these badges when you visit and register for 2022 DevFest
+          event.
+        </p>
+        <div class="d-flex d-md-none m-5 flex-column justify-content-center align-items-center">
+          <img class="w-50 m-1 border border-2" src="./visuals/badge-visit.svg" alt="" />
+          <img class="w-50 m-1 border border-2" src="./visuals/badge-register.svg" alt="" />
+        </div>
+        <div class="d-none d-md-flex m-5 justify-content-center">
+          <img class="w-50 m-1 border border-2" src="./visuals/badge-visit.svg" alt="" />
+          <img class="w-50 m-1 border border-2" src="./visuals/badge-register.svg" alt="" />
+        </div>
+      </section>
+    </div>
+  </section>
+  <section id="partners" class="Partners text-center pt-5 pb-5 gray-dk">
+    <div class="container">
+      <!----- Partners ------->
+      <header class="main-title position-relative">
+        <h2 class="text-light">Partners</h2>
+      </header>
+      <section>
+        <ul class="row d-flex justify-content-center pt-5">
+          <li class="col-md-auto p-2 m-2 col-4">
+            <img src="./visuals/wtm-logo.png" alt="google-ic" />
+          </li>
+          <li class="col-md-auto p-2 m-2 col-4">
+            <img src="./visuals/CIC-logo.png" alt="google-ic" />
+          </li>
+          <li class="col-md-auto pt-4 p-2 m-2 col-4">
+            <img src="./visuals/mozilla-logo.png" alt="google-ic" />
+          </li>
+          <li class="col-md-auto p-2 m-2 col-6">
+            <img src="./visuals/github-logo.png" alt="google-ic" />
+          </li>
+          <li class="col-md-auto pt-4 p-2 m-2 col-6">
+            <img src="./visuals/slack-logo.png" alt="google-ic" />
+          </li>
+        </ul>
+      </section>
+    </div>
+  </section>
+  <footer id="footer" class="row d-md-flex pt-4 pb-4 ps-lg-5 ps-md-2">
+    <div class="ms-md-3 col-md-auto col-6 text-center">
+      <img id="logo" class="ps-2 pt-4 gdg" src="./visuals/logo_dark_gdg.svg" alt="" />
+    </div>
+    <div class="col-md-auto col-6 pt-lg-2 pt-md-2 ps-md-3 ps-lg-4 pe-3">
+      <h6 class="fontS-12 pt-3 pt-md-0">
+        Google Developers under terms that explicitly encourage people to
+        take, modify, reuse, re-purpose, and remix our work as they see fit.
+      </h6>
+      <h6 class="fontS-12 d-none d-md-block">
+        Proper attribution is required when you reuse or create modified
+        versions of content that appears on a page made available under the
+        terms of the Creative Commons Attribution license.
+      </h6>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
