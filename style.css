@@ -41,8 +41,7 @@
 }
 
 .gray-filter {
-  filter: invert(19%) sepia(5%) saturate(2%) hue-rotate(2deg) brightness(93%)
-    contrast(94%);
+  filter: invert(19%) sepia(5%) saturate(2%) hue-rotate(2deg) brightness(93%) contrast(94%);
 }
 
 .color-inv {
@@ -127,7 +126,7 @@ body {
   font-family: "Lexend Deca", sans-serif;
 }
 
-/*---------------- Nav Bar ---------------*/
+/* ---------------- Nav Bar --------------- */
 
 .fa-facebook-f,
 .fa-twitter {
@@ -139,24 +138,18 @@ body {
   mix-blend-mode: luminosity;
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+  color: var(--color-orange);
+}
+
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link .active {
   color: var(--color-orange);
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .show > .nav-link {
-  color: var(--color-orange);
-}
-
-/*-----Intro-----*/
-
-#intro-rap {
-  background-image: url(./visuals/mobile_intro_bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* -----Intro----- */
 
 #intro-rap {
   background-image: url(./visuals/mobile_intro_bg.png);
@@ -168,6 +161,8 @@ h1 {
   background-image: url(./visuals/text-clip.jpg);
   background-repeat: repeat;
   background-size: contain;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -201,7 +196,7 @@ h1 {
   margin-bottom: 16px;
 }
 
-/*----------featured-speakers-----------*/
+/* ----------featured-speakers----------- */
 
 .secondary-title::after {
   content: "";
@@ -214,7 +209,7 @@ h1 {
   transform: translateX(0%);
 }
 
-/*----------About-----------*/
+/* ----------About----------- */
 
 #about {
   display: none;
@@ -226,7 +221,7 @@ h1 {
   overflow: auto;
 }
 
-/*-------------Footer-----------*/
+/* -------------Footer----------- */
 
 .gdg {
   max-width: 170px;
@@ -269,6 +264,7 @@ h1 {
   .gdg {
     max-width: 250px;
   }
+
   .p50 {
     max-width: 70%;
   }
