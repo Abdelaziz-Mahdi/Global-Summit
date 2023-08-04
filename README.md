@@ -61,7 +61,7 @@ Walking through portfolio outline.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link] [Global-Summit](https://abdelaziz-ali.github.io/Global-Summit/)
+- [Global-Summit Live Demo Link](https://abdelaziz-mahdi.github.io/Global-Summit/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
